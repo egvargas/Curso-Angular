@@ -1,0 +1,25 @@
+<div class="container" ngClass="container ">
+  <div class="row align-items-start row justify-content-between">
+    <div class="col p-2 mb-1 bg-secondary text-white rounded mx-auto">
+      Alumnos
+      <div class="col p-2 mb-1 bg-light text-dark rounded mx-auto">
+        <div *ngFor="let persona of listaNombres">
+          <div>{{ persona.nombre }}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col p-2 mb-1 bg-secondary text-white rounded">
+      Nota
+      <div class="col p-2 mb-1 bg-light text-dark rounded mx-auto">
+        <div *ngFor="let persona of listaNombres">
+          <div
+            [ngClass]="persona.nota >= 5 ? 'text-aprobado' : 'text-desaprobado'"
+          >
+            <div>{{ persona.nota }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

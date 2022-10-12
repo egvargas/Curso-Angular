@@ -1,0 +1,23 @@
+/* .mat-card {
+  text-align: left;
+  color: rgb(235, 233, 231);
+  flex-direction: column;
+} */
+
+.btn {
+  background-color: rgb(151, 151, 151);
+  border-radius: 20px;
+  border-color: aliceblue;
+}
+.mat-card-image {
+  border-radius: 10px;
+  display: block;
+  max-width: 80%;
+  height: auto;
+}
+
+::placeholder {
+  /* Se aplica específicamente
+     al texto del placeholder */
+  color: blue;
+}

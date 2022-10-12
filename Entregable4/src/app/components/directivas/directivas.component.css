@@ -1,0 +1,13 @@
+
+.text-aprobado{
+    background-color: #198754;
+}
+
+.text-desaprobado{
+    background-color: #dc3545;
+}
+
+.container{
+    padding-right: 20px;
+    justify-content: center;
+ }
