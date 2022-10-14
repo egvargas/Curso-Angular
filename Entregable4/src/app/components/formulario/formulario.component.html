@@ -130,43 +130,6 @@
                         <label class="form-label" for="">Contraseña</label>
                       </div>
                     </div>
-
-                    <div
-                      class="d-flex flex-row .justify-content-sm-center justify-content-center"
-                    >
-                      <i class="fas fa-key fa-lg me-3 fa-fw"></i>
-                      <div class="form-outline flex-fill mb-0">
-                        <input
-                          type="password"
-                          class="form-control"
-                          formControlName="contrasena2"
-                        />
-                        <label class="form-label" for=""
-                          >Repeti tu contraseña</label
-                        >
-                        <p
-                          *ngIf="formularioUsuario.get('contrasena2')?.touched && formularioUsuario.get('contrasena2')?.errors?.['required']"
-                          class="alert alert-danger"
-                          role="alert"
-                        >
-                          El campo contrasena es requerido
-                        </p>
-                        <p
-                          *ngIf="formularioUsuario.get('contrasena2')?.touched && formularioUsuario.get('contrasena2')?.errors?.['minlength']"
-                          class="alert alert-danger"
-                          role="alert"
-                        >
-                          La contrasena debe tener al menos 5 caracteres
-                        </p>
-                        <p
-                          *ngIf="!contrasenasIguales"
-                          class="alert alert-danger"
-                          role="alert"
-                        >
-                          Las contrasenas deben ser iguales
-                        </p>
-                      </div>
-                    </div>
                     <div
                       class="d-flex justify-content-center mx-4 mb-3 mb-lg-4"
                     >
