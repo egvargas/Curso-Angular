@@ -2,7 +2,8 @@
   <mat-card>
     <mat-card-content>
       <form [formGroup]="formLogin" (ngSubmit)="onEnviar($event)">
-        <p>Iniciar Sesión</p>
+        <img src="../../../../../assets/img/usuario.png" style="width: 150px; height: 150px;">
+        
         <mat-form-field class="full-width-input">
           <input
             matInput
@@ -33,9 +34,9 @@
         <button
           mat-raised-button
           [disabled]="formLogin.invalid"
-          color="primary"
+          color="accent"
         >
-          Login
+          Entrar
         </button>
       </form>
       <mat-divider></mat-divider>
