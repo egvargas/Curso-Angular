@@ -7,7 +7,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "EGVARGAS": {
+    "PF-RomeroUro": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -67,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "PF-EGVARGAS:build:production"
+              "browserTarget": "PF-RomeroUro:build:production"
             },
             "development": {
-              "browserTarget": "PF-EGVARGAS:build:development"
+              "browserTarget": "PF-RomeroUro:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "PF-EGVARGAS:build"
+            "browserTarget": "PF-RomeroUro:build"
           }
         },
         "test": {
@@ -96,5 +96,5 @@
       }
     }
   },
-  "defaultProject": "PF-EGVARGAS"
+  "defaultProject": "PF-RomeroUro"
 }

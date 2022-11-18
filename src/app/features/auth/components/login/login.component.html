@@ -2,9 +2,12 @@
   <mat-card>
     <mat-card-content>
       <form [formGroup]="formLogin" (ngSubmit)="onEnviar($event)">
-        <h1 style="color: primary">Bienvenidos al Proyecto Final</h1>
-        <img src="../../../../../assets/img/usuario.png" style="width: 150px; height: 150px;">
-        
+        <h1 style="color: primary">Proyecto Final CoderHouse</h1>
+        <img
+          src="../../../../../assets/img/usuario.png"
+          style="width: 150px; height: 150px"
+        />
+
         <mat-form-field class="full-width-input">
           <input
             matInput
@@ -32,11 +35,7 @@
             </span>
           </mat-error>
         </mat-form-field>
-        <button
-          mat-raised-button
-          [disabled]="formLogin.invalid"
-          color="accent"
-        >
+        <button mat-raised-button [disabled]="formLogin.invalid" color="accent">
           Entrar
         </button>
       </form>
